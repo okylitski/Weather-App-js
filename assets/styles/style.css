@@ -1,0 +1,145 @@
+html, body {
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.background__map {
+    background-image: url(../images/map.png);
+    border-radius: 5px:
+}
+
+.background {
+    background: rgba(52, 224, 247, 1);
+    background: -moz-linear-gradient(left, rgba(52, 224, 247, 1) 0%, rgba(88, 64, 128, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(52, 224, 247, 1)),
+    color-stop(100%, rgba(88, 64, 128, 1)));
+    background: -webkit-linear-gradient(left, rgba(52, 224, 247, 1) 0%, rgba(88, 64, 128, 1) 100%);
+    background: -o-linear-gradient(left, rgba(52, 224, 247, 1) 0%, rgba(88, 64, 128, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(52, 224, 247, 1) 0%, rgba(88, 64, 128, 1) 100%);
+    background: linear-gradient(to right, rgba(52, 224, 247, 1) 0%, rgba(88, 64, 128, 0.7) 100%);
+    padding: 3vh 0 92vh;
+    border-radius: 0 0 5px 5px;
+    opacity: 1;
+}
+
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+form:after {
+    content: "";
+    position: absolute;
+    top: -5vh;
+    width: 0;
+    height: 0;
+    border-left: 350px solid transparent;
+    border-right: 350px solid transparent;
+    border-top: 190px solid #9370D8;
+    z-index: 1;
+}
+
+p {
+    vertical-align: center;
+    font-size: 15px;
+    font-family: "arial";
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 2;
+
+}
+
+.find {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: 190px;
+    font-size: 15px;
+    font-family: "arial";
+    font-weight: 600;
+    background: #ffffe0;
+    vertical-align: center;
+    width: 70px;
+    height: 70px;
+    box-shadow:;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    opacity: 1;
+    z-index: 2;
+}
+
+.find:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 125%;
+    top: 7vh;
+    border: 0.5px solid #ffffe0;
+    width: 220px;
+}
+
+.find:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -340%;
+    top: 7vh;
+    border: 0.5px solid #ffffe0;
+    width: 220px;
+}
+
+input {
+    position: relative;
+    font-size: 15px;
+    font-family: "arial";
+    color: #ffffff;
+    font-weight: 600;
+    vertical-align: center;
+    height: 17px;
+    margin: 14px 20px;
+    border-radius: 1px;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ffffffff;
+    z-index: 2;
+}
+
+.temperature {
+    position: absolute;
+    left: 63%;
+    top: 160px;
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "arial";
+}
+
+.city {
+    position: absolute;
+    left: 32%;
+    top: 170px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "arial";
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#map {
+    margin: 40vh 0 0 0;
+    height: 60%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
