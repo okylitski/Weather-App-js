@@ -30,7 +30,7 @@ const results = document.getElementById('results');
    
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
-     const data = await fetch(`http://api.apixu.com/v1/current.json?key=26d10df7710a4383bda172954190909&q=${input.value}`);
+     const data = await fetch(`https://api.apixu.com/v1/current.json?key=26d10df7710a4383bda172954190909&q=${input.value}`);
     const parsedData = await data.json();
     const { current: { temp_c }, location: { name } } = parsedData;
     city.innerHTML = `${name}`;
