@@ -5,27 +5,29 @@ const temperature = document.querySelector('.temperature');
 const city = document.querySelector('.city');
 const API_KEY = 'dcb0cec0612e417fa51142150191005';
 const URL = 'https://api.apixu.com/v1/current.json?';
+const keyMaps = '60c89b72b8c011'
+const streets = L.tileLayer.Unwired({key: keyMaps, scheme: "streets"});
 const results = document.getElementById('results');
-     // Maps access token goes here
-    var key = 'pk.a5c3fbf2119bfb2275b62eddbccd76b3';
+// Maps access token goes here
+var key = 'pk.a5c3fbf2119bfb2275b62eddbccd76b3';
 
-    // Initialize the map
-    var map = L.map('map', {
-        center: [39.73, -104.99], // Map loads with this location as center
-        zoom: 2,
-        scrollWheelZoom: false,
-    });
+// Initialize the map
+var map = L.map('map', {
+    center: [39.73, -104.99], // Map loads with this location as center
+    zoom: 2,
+layers: [streets],
+});
 
-    // Add the 'scale' control
-    L.control.scale().addTo(map);
+// Add the 'scale' control
+L.control.scale().addTo(map);
 
-    // Add the 'streets' layer to the map
-    L.tileLayer('https://{s}-tiles.locationiq.org/v2/obk/r/{z}/{x}/{y}.png?key={accessToken}', {
-        attribution: '<a href=\"https://unwiredlabs.com/locationapi?ref=maps\" target=\"_blank\">© Unwired Labs</a> <a href=\"https://openstreetmap.org/about/\" target=\"_blank\">© OpenStreetMap</a>',
-        maxZoom: 18,
-        id: 'streets',
-        accessToken: key
-    }).addTo(map);
+// Add the 'streets' layer to the map
+L.tileLayer('https://{s}-tiles.locationiq.org/v2/obk/r/{z}/{x}/{y}.png?key={accessToken}', {
+    attribution: '<a href=\"https://unwiredlabs.com/locationapi?ref=maps\" target=\"_blank\">© Unwired Labs</a> <a href=\"https://openstreetmap.org/about/\" target=\"_blank\">© OpenStreetMap</a>',
+    maxZoom: 18,
+    id: 'streets',
+    accessToken: key
+}).addTo(map);
 
    
 form.addEventListener('submit', async (event) => {
