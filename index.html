@@ -16,11 +16,13 @@
 <form>
 	<p>Enter your city:</p>
 	<input class="enter" type="text" name=""/>
+    <div class="error"></div>
 	<button class="find">Find</button>
 </form>
-</div>
-
-</div>
+    <div class="edit">
+        <button class="clear">clear</button>
+        <button class="my_city">my city</button>
+    </div>
 <div class="temperature">
 
 </div>
@@ -28,6 +30,25 @@
 
 </div>
 
+    <div class="container">
+    <table>
+        <colgroup>
+            <col span="3">
+        </colgroup>
+        <thead >
+        <tr>
+            <th>City</th>
+            <th>Country</th>
+            <th>tºC</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+</div>
+</div>
 <div id='map'></div>
 <script type="text/javascript" src="https://leafletjs-cdn.s3.amazonaws.com/content/leaflet/master/leaflet.js"></script>
 <script type="text/javascript" src="https://tiles.unwiredmaps.com/js/leaflet-unwired.js"></script>
