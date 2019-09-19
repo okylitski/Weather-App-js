@@ -9,7 +9,7 @@ const keyMaps = '60c89b72b8c011'
 const streets = L.tileLayer.Unwired({key: keyMaps, scheme: "streets"});
 const error = document.querySelector('.error');
 const clear = document.querySelector('.clear');
-const table= document.querySelector('table');
+const container= document.querySelector('.container');
 // Maps access token goes here
 var key = 'pk.a5c3fbf2119bfb2275b62eddbccd76b3';
 
@@ -58,6 +58,7 @@ form.addEventListener('submit', async (event) => {
     const {lon} = dataMap[0];
     await L.marker([lat, lon]).addTo(map);
     await addParametr(data, parsedData, name_city,name_country,temp)
+    container.style.display="block"
 });
 clear.addEventListener('click', async () => {
     localStorage.clear();
