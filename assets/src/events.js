@@ -1,6 +1,6 @@
 
 
-const {addParametr} = require('./render');
+const addParametr = require('./render');
 const reload = require('./other')
 const {errors,success} = require('./currentWeather')
 
@@ -74,6 +74,6 @@ window.addEventListener('load', function() {
 clear.addEventListener('click', async () => {
     localStorage.clear();
     event.preventDefault();
-    setTimeout(reload, 2500);
+    setTimeout(reload, 500);
 });
 
