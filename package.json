@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assets/src/events.js",
+  "scripts": {
+    "build": "browserify assets/src/events.js -o assets/public/bundle.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okylitski/Weather-App-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okylitski/Weather-App-js/issues"
+  },
+  "homepage": "https://github.com/okylitski/Weather-App-js#readme"
+}

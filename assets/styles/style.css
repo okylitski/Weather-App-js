@@ -55,6 +55,7 @@ p {
 }
 
 .find {
+    cursor: pointer;
     position: absolute;
     left: 50%;
     margin-right: -50%;
@@ -181,14 +182,23 @@ th{
     overflow-y: hidden;
 }
 .edit{
-    margin:0 0 0 80%;
+    margin:-40px 0 0 90%;
     text-align: center;
 }
 .edit button{
-    margin: 0 20px;
-    padding: 10px 15px;
+    cursor: pointer;
+    margin: 20px 0;
     font-family: "arial";
     font-size: 15px;
     border-radius: 2px;
     outline:none;
+    border: none;
+}
+.clear{
+    display: block;
+    padding: 10px 22px;
+}
+.my_city{
+    display: block;
+    padding: 10px 15px;
 }
